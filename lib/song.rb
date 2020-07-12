@@ -9,7 +9,7 @@ class Song
          @@all << self
     end
     def artist_name
-        self.artist.name
+        self.artist ? self.artist.name : nil
     end
 
     def self.all
